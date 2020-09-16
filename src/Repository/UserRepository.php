@@ -46,7 +46,7 @@ class UserRepository extends ServiceEntityRepository
         return json_encode($query);
     }
 
-    public function findByReferenceCarte(string $reference) : array
+    public function findByReferenceCarte(string $reference) : string
     {
         $query = $this->createQueryBuilder('u')
             ->setParameter(':ref', $reference)
