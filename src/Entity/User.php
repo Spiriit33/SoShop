@@ -17,9 +17,10 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
  *     collectionOperations={
  *         "get",
  *     },
+ *     itemOperations={"get"}
  *
  * )
- * @ApiFilter(SearchFilter::class, properties={"email","comptes.reference","comptes.carte.reference_carte"})
+ * @ApiFilter(SearchFilter::class, properties={"email" : "partial","comptes.reference" : "partial","comptes.carte.reference_carte" : "partial"})
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
 class User
