@@ -30,7 +30,7 @@ class AppFixtures extends Fixture
         $dataUsers = [
             ['nom' => 'Ricciardo', 'prenom' => 'Daniel', 'date_naissance' => date_create('1989-07-01'), 'email' => 'honey.badger@fia.com', 'comptes' => 2],
             ['nom' => 'Gasly', 'prenom' => 'Pierre', 'date_naissance' => date_create('1996-02-07'), 'email' => 'pierrot-monza2020@fia', 'comptes' => 1],
-            ['nom' => 'Ricciardo', 'prenom' => 'Daniel', 'date_naissance' => date_create('1987-07-03'), 'email' => 'babyschumy@fia.com', 'comptes' => 1],
+            ['nom' => 'Vettel', 'prenom' => 'Sebastian', 'date_naissance' => date_create('1987-07-03'), 'email' => 'babyschumy@fia.com', 'comptes' => 1],
         ];
 
         foreach ($dataUsers as $ds) {
